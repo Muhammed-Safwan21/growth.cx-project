@@ -1,0 +1,63 @@
+@import "../styles/variables.scss";
+.footer {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  h1,
+  h5,
+  p {
+    color: $primaryColor;
+  }
+
+  .button {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px $primaryColor !important;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+    }
+  }
+  a {
+    text-decoration: none;
+
+    p {
+      color: #bdbdbd;
+    }
+  }
+  .footer-links {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+    .vertical-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+      line-height: 0.7rem;
+      height: 100%;
+      h5 {
+        margin-bottom: 25px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .footer-links {
+    margin: 0;
+    .vertical-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

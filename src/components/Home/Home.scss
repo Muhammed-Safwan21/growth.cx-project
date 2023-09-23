@@ -1,0 +1,40 @@
+@import "../styles/variables.scss";
+
+.home {
+  height: 70vh;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./Frame19.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 48px;
+    margin-top: 25px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 54px;
+    color: $secondaryColor;
+  }
+  h3 {
+    color: $secondaryColor;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .small-dot {
+    font-size: 14px;
+  }
+}
+h2 {
+  font-weight: bold;
+  color: $secondaryColor;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 25px;
+}
